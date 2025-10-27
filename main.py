@@ -27,38 +27,8 @@ def check_for_updates():
 def main():
     if not check_for_updates():
         return
-def print_announcement():
-    try:
-        r = requests.get("https://pastebin.com/raw/1EwXmhbY", headers={"Cache-Control": "no-cache"})
-        announcement = r.content.decode('utf-8').strip()
-        return announcement
-    except:
-        print("Bot version check failed. Start manually, but it may not work without the latest version.\n")
 
-
-
-def main():
-    if not check_for_updates():
-        return
-    print_announcement()
-    
-
-    os.system(f"title fLUIDscripts. Twitch View Bot 3.1 ")
-
-    print(Colors.orange, Center.XCenter("╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮"))
-    print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""   ┌─┐┬  ┬ ┬┬┌┬┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐┌─┐ 
-   ├┤ │  │ ││ ││└─┐│  ├┬┘│├─┘ │ └─┐ 
-   └  ┴─┘└─┘┴─┴┘└─┘└─┘┴└─┴┴   ┴ └─┘o
-  GITHUB: HTTPS://GITHUB.COM/FLUIDMAIN
-""")))
-    print(Colors.orange, Center.XCenter("╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯"))
-    announcement = print_announcement()
-    print("")
-    print(Colors.orange, Center.XCenter("╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮"))
-    print(Colors.red, Center.XCenter("Thank you for using our bot."))
-    print(Colors.yellow, Center.XCenter(f"{announcement}"))
-    print(Colors.orange, Center.XCenter("╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯"))
-    print("")
+    os.system(f"title Twitch View Bot 2.0 by dragon4926 -")
     
     # Proxy URLS
     proxy_servers = {
@@ -86,7 +56,7 @@ def main():
     print(Colorate.Vertical(Colors.green_to_blue,"  "))
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
     print(Colors.cyan, Center.XCenter("Target Twitch account? Please provide only the username!"))
-    print(Colors.cyan, Center.XCenter("Example: fluidscripts"))
+    print(Colors.cyan, Center.XCenter("Example: o7_streams  (NOT: www.twitch.tv/o7_streams)"))
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
     twitch_username = input(Colorate.Vertical(Colors.cyan_to_blue, ">>"))
     
@@ -102,14 +72,7 @@ def main():
     
     # Next Step
     os.system("cls")
-    print(Colors.orange, Center.XCenter("╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮"))
-    print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""   ┌─┐┬  ┬ ┬┬┌┬┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐┌─┐ 
-   ├┤ │  │ ││ ││└─┐│  ├┬┘│├─┘ │ └─┐ 
-   └  ┴─┘└─┘┴─┴┘└─┘└─┘┴└─┴┴   ┴ └─┘o
-  GITHUB: HTTPS://GITHUB.COM/FLUIDMAIN
-""")))
-    print(Colors.orange, Center.XCenter("╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯"))
-    print('')
+
     print('')
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
     print(Colors.cyan, Center.XCenter("The bot starts and sends viewers."))
@@ -117,7 +80,7 @@ def main():
     print(Colors.cyan, Center.XCenter("then restart the bot or change the proxy server."))
     print(Colors.orange, Center.XCenter("╚════════════════════════════════════════════════════════════════════════════╝"))
 
-    chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
+    chrome_path = r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
     driver_path = 'chromedriver.exe'
 
     chrome_options = webdriver.ChromeOptions()
@@ -144,13 +107,8 @@ def main():
 
     # Ende
     os.system("cls")
-    print(Colors.orange, Center.XCenter("╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮"))
-    print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""   ┌─┐┬  ┬ ┬┬┌┬┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐┌─┐ 
-   ├┤ │  │ ││ ││└─┐│  ├┬┘│├─┘ │ └─┐ 
-   └  ┴─┘└─┘┴─┴┘└─┘└─┘┴└─┴┴   ┴ └─┘o
-  GITHUB: HTTPS://GITHUB.COM/FLUIDMAIN
-""")))
-    print(Colors.orange, Center.XCenter("╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯"))
+
+    print('')
     print(Colors.orange, Center.XCenter("╔════════════════════════════════════════════════════════════════════════════╗"))
     print(Colors.cyan, Center.XCenter("Viewers have arrived."))
     print(Colors.cyan, Center.XCenter(""))
@@ -166,7 +124,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# ==========================================
-# Copyright 2023 - fLUIDscripts.
-# ==========================================
