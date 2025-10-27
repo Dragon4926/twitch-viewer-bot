@@ -12,11 +12,11 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 def check_for_updates():
     try:
-        r = requests.get("https://raw.githubusercontent.com/fluidmain/Twitch-Viewer-Bot/main/uptodate")
+        r = requests.get("https://raw.githubusercontent.com/dragon4926/twitch-viewer-bot/main/version.txt", headers={"Cache-Control": "no-cache"})
         remote_version = r.content.decode('utf-8').strip()
-        local_version = open('uptodate.txt', 'r').read().strip()
+        local_version = open('version.txt', 'r').read().strip()
         if remote_version != local_version:
-            print("A updated version of the bot is avaiable. You can download the update here: https://github.com/fluidmain/Twitch-Viewer-Bot")
+            print("A updated version of the bot is avaiable. You can download the update here: https://github.com/dragon4926/twitch-viewer-bot")
             time.sleep(3)
             return False
         return True
